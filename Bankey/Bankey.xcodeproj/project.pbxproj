@@ -16,8 +16,12 @@
 		055E866D2806518200046372 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E866C2806518200046372 /* LocalState.swift */; };
 		055E866F28065E3D00046372 /* UIViewControllers+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E866E28065E3D00046372 /* UIViewControllers+Utils.swift */; };
 		055E867128065F6A00046372 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E867028065F6A00046372 /* MainViewController.swift */; };
+		055E867428091D0700046372 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E867328091D0700046372 /* AccountSummaryViewController.swift */; };
+		059ACAE72811FF5C00FABD2B /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059ACAE62811FF5C00FABD2B /* AccountSummaryCell.swift */; };
 		05CA4E532801B52B0041A7CC /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA4E522801B52B0041A7CC /* OnboardingContainerViewController.swift */; };
 		05CA4E552801BE960041A7CC /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA4E542801BE960041A7CC /* OnBoardingViewController.swift */; };
+		05D60D412809AA4500AA81FF /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D60D402809AA4500AA81FF /* AccountSummaryHeaderView.swift */; };
+		05D60D432809AA6D00AA81FF /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D60D422809AA6D00AA81FF /* AccountSummaryHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +36,12 @@
 		055E866C2806518200046372 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		055E866E28065E3D00046372 /* UIViewControllers+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewControllers+Utils.swift"; sourceTree = "<group>"; };
 		055E867028065F6A00046372 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		055E867328091D0700046372 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
+		059ACAE62811FF5C00FABD2B /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 		05CA4E522801B52B0041A7CC /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		05CA4E542801BE960041A7CC /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		05D60D402809AA4500AA81FF /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
+		05D60D422809AA6D00AA81FF /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +75,12 @@
 			isa = PBXGroup;
 			children = (
 				05136CB427FCB1D100C35F98 /* AppDelegate.swift */,
+				055E867028065F6A00046372 /* MainViewController.swift */,
 				05136CCA27FCC6D200C35F98 /* Login */,
 				05CA4E512801B46B0041A7CC /* Onboarding */,
+				055E867228091CCD00046372 /* AccountSummary */,
 				055E866B2806516E00046372 /* Utils */,
 				05136CC927FCC68B00C35F98 /* Files */,
-				055E867028065F6A00046372 /* MainViewController.swift */,
 			);
 			path = Bankey;
 			sourceTree = "<group>";
@@ -103,6 +112,33 @@
 				055E866E28065E3D00046372 /* UIViewControllers+Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		055E867228091CCD00046372 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				055E867328091D0700046372 /* AccountSummaryViewController.swift */,
+				059ACAE42811FF0400FABD2B /* Header */,
+				059ACAE52811FF2900FABD2B /* Cells */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		059ACAE42811FF0400FABD2B /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				05D60D402809AA4500AA81FF /* AccountSummaryHeaderView.swift */,
+				05D60D422809AA6D00AA81FF /* AccountSummaryHeaderView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		059ACAE52811FF2900FABD2B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				059ACAE62811FF5C00FABD2B /* AccountSummaryCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		05CA4E512801B46B0041A7CC /* Onboarding */ = {
@@ -172,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D60D432809AA6D00AA81FF /* AccountSummaryHeaderView.xib in Resources */,
 				05136CC127FCB1D300C35F98 /* LaunchScreen.storyboard in Resources */,
 				05136CBE27FCB1D300C35F98 /* Assets.xcassets in Resources */,
 			);
@@ -187,10 +224,13 @@
 				05136CCC27FCC71200C35F98 /* LoginView.swift in Sources */,
 				055E866D2806518200046372 /* LocalState.swift in Sources */,
 				055E866A28062C4E00046372 /* DummyViewController.swift in Sources */,
+				05D60D412809AA4500AA81FF /* AccountSummaryHeaderView.swift in Sources */,
 				05136CB927FCB1D100C35F98 /* LoginViewController.swift in Sources */,
 				055E866F28065E3D00046372 /* UIViewControllers+Utils.swift in Sources */,
+				059ACAE72811FF5C00FABD2B /* AccountSummaryCell.swift in Sources */,
 				05136CB527FCB1D100C35F98 /* AppDelegate.swift in Sources */,
 				055E867128065F6A00046372 /* MainViewController.swift in Sources */,
+				055E867428091D0700046372 /* AccountSummaryViewController.swift in Sources */,
 				05CA4E532801B52B0041A7CC /* OnboardingContainerViewController.swift in Sources */,
 				05CA4E552801BE960041A7CC /* OnBoardingViewController.swift in Sources */,
 			);
